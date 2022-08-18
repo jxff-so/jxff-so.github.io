@@ -1,28 +1,30 @@
 <h1>Hello, I'm Jeff</h1>
 
 <form>
-  <table border=1>
+  <table border='1'>
     <tr>
-      <td>Name: </td>
-      <td>Jeff So</td>
+      <th>Name: </th>
+      <td><input type='text' name="input_name"></td>
     </tr>
     <tr>
-      <td>Relationship Status: </td>
+      <th>Relationship Status: </th>
       <td>
-        <input type="radio" name="rls_status" value="Single">
-        <input type="radio" name="rls_status" value="Married">
-        <input type="radio" name="rls_status" value="Complicated">
+        <input type="radio" name="rls_status" value="Single">Single<br />
+        <input type="radio" name="rls_status" value="Married">Married<br />
+        <input type="radio" name="rls_status" value="Complicated">Complicated<br />
       </td>
     </tr>
     <tr>
-      <td>Favourite Fruits: </td>
+      <th>Favourite Fruits: </th>
       <td>
-        <input type="checkbox" name="fruits" value="Apple">
-        <input type="checkbox" name="fruits" value="Grape">
-        <input type="checkbox" name="fruits" value="Pineapple">
-        <input type="checkbox" name="fruits" value="Orange">
+        <input type="checkbox" name="fruits" value="Apple">Apple<br />
+        <input type="checkbox" name="fruits" value="Grape">Grape<br />
+        <input type="checkbox" name="fruits" value="Pineapple">Pineapple<br />
+        <input type="checkbox" name="fruits" value="Orange">Orange<br />
       </td>
     </tr>
-    <input type='submit' value='Submit'>
+    <tr>
+        <td colspan='2'><input type='submit' value='Submit'></td>
+    </tr>
   </table>
 </form>
