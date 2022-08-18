@@ -1,8 +1,28 @@
 <h1>Hello, I'm Jeff</h1>
 
-<table>
-  <tr>
-    <td>Name:</td>
-    <td>Jeff So</td>
-  </tr>
-</table>
+<form>
+  <table border=1>
+    <tr>
+      <td>Name: </td>
+      <td>Jeff So</td>
+    </tr>
+    <tr>
+      <td>Relationship Status: </td>
+      <td>
+        <input type="radio" name="rls_status" value="Single">
+        <input type="radio" name="rls_status" value="Married">
+        <input type="radio" name="rls_status" value="Complicated">
+      </td>
+    </tr>
+    <tr>
+      <td>Favourite Fruits: </td>
+      <td>
+        <input type="checkbox" name="fruits" value="Apple">
+        <input type="checkbox" name="fruits" value="Grape">
+        <input type="checkbox" name="fruits" value="Pineapple">
+        <input type="checkbox" name="fruits" value="Orange">
+      </td>
+    </tr>
+    <input type='submit' value='Submit'>
+  </table>
+</form>
