@@ -1,0 +1,27 @@
+body {
+    margin-left: 2%;
+    margin-top: 2%;
+    background-color: beige;
+    background-size: 100%;
+}
+u:hover + .anime {
+    content: url(images/anime.jpg);
+    display: flex;
+    height: 350px;
+    width: auto;
+    position: relative;
+}
+u:hover + .figurine {
+    content: url(images/pic2.jpg);
+    display: flex;
+    height: 350px;
+    width: auto;
+    position: relative;
+}
+u:hover + .games {
+    content: url(images/game.jpg);
+    display: flex;
+    height: 350px;
+    width: auto;
+    position: relative;
+}

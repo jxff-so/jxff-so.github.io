@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hi There</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h2>Jeff So</h2>
-    <p>This page serves to give a short introduction about me</p>
-    <br /><br /><br />
-    <h1>About Me</h1>
-    <div>
-      <p style="float: left">
-        My name is Jeff and I am currently a Sophomore in SMU studying Information Systems. <br />
-        I am currently 22 years old and life is not popping. I usually start my day off by <br />
-        going back to sleep for another hour or so and it really takes me everything in my <br />
-        power to get out of bed.
-        <br /><br />
-        My hobbies include watching anime, collecting figurines and playing games. I <br />
-        currently own about three shelves worth of figurines and it is still a growing <br />
-        collection. I also love to go on runs in the middle of the night when I am <br />
-        feeling restless. I play a few games which consists of Genshin Impact, Valorant <br />
-        and Project Sekai. 
-        <br /><br />
-        This module seems fun so I hope to be able to learn a lot of new stuff.
-      </p>
-      <div>
-        <img style='display:inline-block' height="300" width="auto" src="./pic1.jpg">
-        <img style='display:inline-block' height="300" width="auto" src="./pic2.jpg">
-      </div>
+    <div class="col-6">
+      <h2 class="display-5">
+        Jeff So 
+        <img src="./images/emu.jpg" height="50" width='50' style="border-radius:25%">
+      </h2>
+      <p class="alert alert-primary">This page serves to give a short introduction about me</p>
     </div>
-    <p>Cheers ;)</p>
+    <div class="row">
+      <!--Text on Left Half-->
+      <div class="col-6">
+        <h1 class="display-5">About Me</h1>
+        <p class="alert alert-dark">
+          My name is Jeff and I am currently a Sophomore in SMU studying Information Systems.
+          I am currently 22 years old and life is not popping. I usually start my day off by 
+          going back to sleep for another hour or so and it really takes me everything in my 
+          power to get out of bed.
+          <br /><br />
+          My hobbies include 
+          <u class="anime">watching anime,</u>
+          <u class="figurine">collecting figurines</u> 
+          and 
+          <u class="games">playing games</u>. I
+          currently own about three shelves worth of figurines and it is still a growing 
+          collection. I also love to go on runs in the middle of the night when I am 
+          feeling restless. I play a few games which consists of Genshin Impact, Valorant
+          and Project Sekai. 
+          <br /><br />
+          This module seems fun so I hope to be able to learn a lot of new stuff.
+        </p>
+      </div>
+      <!--Image on Right Half-->
+      <div class="col-6 text-center">
+          <img height="350" width='auto' src="./images/pic1.jpg" class="rounded">
+      </div>
+    </div> <!--End of Row Div-->
   </body>
 </html>
