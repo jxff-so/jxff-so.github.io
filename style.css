@@ -4,21 +4,21 @@ body {
     background-color: beige;
     background-size: 100%;
 }
-u:hover + .anime {
+u.anime:active {
     content: url(images/anime.jpg);
     display: flex;
     height: 350px;
     width: auto;
     position: relative;
 }
-u:hover + .figurine {
+u.figurine:active {
     content: url(images/pic2.jpg);
     display: flex;
     height: 350px;
     width: auto;
     position: relative;
 }
-u:hover + .games {
+u.games:active {
     content: url(images/game.jpg);
     display: flex;
     height: 350px;
