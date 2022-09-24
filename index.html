@@ -1,47 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hi There</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <div class="col-6">
-      <h2 class="display-5">
-        Jeff So 
-        <img src="./images/emu.jpg" height="50" width='50' style="border-radius:25%">
-      </h2>
-      <p class="alert alert-primary">This page serves to give a short introduction about me</p>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <title>jeff so's profile</title>
+  <script src="./javascript.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- As a heading -->
+  <nav class="navbar bg-light">
+    <div class="container-fluid" style="background-color: rgb(52, 128, 208);">
+      <span class="navbar-brand mb-0 h1" style="color: white">jeff so's profile</span>
     </div>
+    <div class='container-fluid' style="background-color: orange;">
+      <span class="mb-0" style="text-align:center; margin:auto;">Welcome to Hell</span>
+    </div>
+  </nav>
+  <!-- My images-->
+  <div class="container-fluid">
     <div class="row">
-      <!--Text on Left Half-->
-      <div class="col-6">
+      <img class="lazyload col-3" src="./images/pic1.jpg" style="border-radius:8%;">
+      <div class="col-9 alert alert-dark grab">
         <h1 class="display-5">About Me</h1>
-        <p class="alert alert-dark">
+        <p>
           My name is Jeff and I am currently a Sophomore in SMU studying Information Systems.
           I am currently 22 years old and life is not popping. I usually start my day off by 
           going back to sleep for another hour or so and it really takes me everything in my 
           power to get out of bed.
-          <br /><br />
-          My hobbies include 
-          <u class="anime">watching anime,</u>
-          <u class="figurine">collecting figurines</u> 
-          and 
-          <u class="games">playing games</u>. I
-          currently own about three shelves worth of figurines and it is still a growing 
-          collection. I also love to go on runs in the middle of the night when I am 
-          feeling restless. I play a few games which consists of Genshin Impact, Valorant
-          and Project Sekai. 
-          <br /><br />
-          This module seems fun so I hope to be able to learn a lot of new stuff.
         </p>
       </div>
-      <!--Image on Right Half-->
-      <div class="col-6 text-center">
-          <img height="350" width='auto' src="./images/pic1.jpg" class="rounded">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <table>
+          <tr><td>Last Online: </td><td>Now</td></tr>
+          <tr><td>Joined: </td><td>19 Jan 2000</td></tr>
+          <!-- <tr>
+            <td><button type="button" class="btn btn-primary" style="width:100%">Contact No.</button></td>
+            <td><button type="button" class="btn btn-primary" style="width:100%">Secret</button></td>
+          </tr> -->
+          <tr><td><br></td></tr>
+          <tr><td colspan='2'>Available On:</td></tr>
+          <tr><td colspan='2' id="discord">Discord</td></tr> <!--Discord-->
+          <tr><td colspan='2'>
+            <a id='ig' href='https://www.instagram.com/___jxff/'>Instagram</a></td></tr> <!--Instagram-->
+          <tr><td colspan='2'>
+            <a id='link'href='https://www.linkedin.com/in/jeffsowehkeat/'>LinkedIn</a></td></tr> <!--LinkedIn-->
+          <tr><td colspan='2' id="tele">Telegram</td></tr> <!--Telegram-->
+        </table>
       </div>
-    </div> <!--End of Row Div-->
-  </body>
+      <div class="col-9 alert container-fluid">
+        <div class="card col-5">
+          <img src="./images/wallet.gif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">MyFigureCollection</h5>
+            <p class="card-text">These are the figurines that I currently possess. Half of my net worth are here</p>
+            <a href="https://myfigurecollection.net/profile/mushyalumni" class="btn btn-danger">Explore</a>
+          </div>
+        </div>
+        <div class="card col-5">
+          <img src="./images/lycoris.gif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">MyAnimeList</h5>
+            <p class="card-text">These are the animes that I have watched over the span of my life. Year 2 has caused this list to stop for good</p>
+            <a href="https://myanimelist.net/profile/jxff_so" class="btn btn-success">Explore</a>
+          </div>
+        </div>
+        <div class="card col-5">
+          <div class="card-body">
+            <img src="./images/maintenance.gif" class="card-img-top">
+            <h5 class="card-title">Maintenance</h5>
+            <p class="card-text">You could try your luck but you will never get to this secret page</p>
+            <a href="https://youtu.be/xm3YgoEiEDc" class="btn btn-secondary" id='luck' onmouseover="luck()" onmouseout="unluck()" onclick="luck_alert()">Try Luck</a>
+          </div>
+        </div>
+        <div class="card col-5" id="genshin">
+          <img src="./images/lumine.gif" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Games</h5>
+            <p class="card-text">This links to my Genshin Impact stats which shows my life in a nutshell</p>
+            <a href=" https://act.hoyolab.com/app/community-game-records-sea/index.html?bbs_presentation_style=fullscreen&bbs_auth_required=true&v=102&gid=2&user_id=154318244&bbs_theme=dark&bbs_theme_device=1&utm_source=share&utm_medium=link&utm_campaign=web#/ys" class="btn btn-warning">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
 </html>

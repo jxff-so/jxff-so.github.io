@@ -1,27 +1,45 @@
 body {
-    margin-left: 2%;
-    margin-top: 2%;
-    background-color: beige;
-    background-size: 100%;
+    width: 80%;
+    margin: auto;
 }
-u.anime:active {
-    content: url(images/anime.jpg);
-    display: flex;
-    height: 350px;
-    width: auto;
-    position: relative;
+
+/* .grab {
+    cursor: url("images/sleep.png"), auto;
+} */
+
+td {
+    padding-left: 14px;
 }
-u.figurine:active {
-    content: url(images/pic2.jpg);
-    display: flex;
-    height: 350px;
-    width: auto;
-    position: relative;
+
+#discord,
+#tele,
+#ig,
+#link {
+    color: #0000EE;
 }
-u.games:active {
-    content: url(images/game.jpg);
-    display: flex;
-    height: 350px;
-    width: auto;
-    position: relative;
+
+#discord:hover::after {
+    content: ": jeff so#8466"
+}
+
+#tele:hover::after {
+    content: ": @jxffso"
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    width: 50%;
+    float: right;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: 'cover';
+}
+h5:hover {
+    background-color: yellow;
 }
